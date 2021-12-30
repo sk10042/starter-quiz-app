@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { QUIZZES } from "../../constants";
+import { SURVEY } from "../../constants";
 import Button from "../Button";
 
 const AnswerGroupWrapper = styled.div`
@@ -13,11 +13,11 @@ const AnswerGroupWrapper = styled.div`
 
 const AnswerGroup = ({ currentNo, handleClick }) => (
 	<AnswerGroupWrapper>
-		{QUIZZES[currentNo].answers.map((answer) => (
+		{SURVEY[currentNo].answers.map((answer) => (
 			<Button
 				key={answer.text}
 				text={answer.text}
-				onClick={() => handleClick(answer.isCorrect)}
+				onClick={() => handleClick(answer.agree)}
 			></Button>
 		))}
 	</AnswerGroupWrapper>

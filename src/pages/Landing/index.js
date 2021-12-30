@@ -1,11 +1,12 @@
 import Container from "../../components/Container";
 import styled from "styled-components";
-import cover from "../../assets/images/cover.jpg";
+import dialect from "../../assets/images/dialect.png";
 import Button from "../../components/Button";
+import Input from "../../components/Input";
 import { Link } from "react-router-dom";
 
 const Title = styled.h1`
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: bold;
 	margin: 8px 0px;
 	text-align: center;
@@ -28,25 +29,26 @@ const StyledImage = styled.img`
 	display: block;
 `;
 
-const Text = styled.p`
-	font-size: 16px;
-	margin-bottom: 24px;
-`;
+const Landing = ({ setUserName }) => {
 
-const Landing = () => (
+	const handleChange = (e) => {
+		setUserName((userName) => e.target.value);
+		
+	};
+
+	return (
 	<Container>
-		<Title>일론 머스크 지수 테스트</Title>
-		<SubTitle>나는 일론 머스크에 대해서 얼마나 알고 있을까?</SubTitle>
-		<StyledImage src={cover} alt="cover"></StyledImage>
-		<Text>
-			2021년 2월 기준 세계 2위 억만장자 일론 머스크. 테슬라, 스타링크, 스페이스
-			X, 뉴럴링크까지 많은 혁신 기업을 배출한 일론 머스크에 대해서 얼마나 알고
-			계신가요?
-		</Text>
+		<Title>경상도 사투리 능력 고사</Title>
+		<SubTitle>나는 경상도 사투리를 얼마나 잘 알고 있을까?<br /> 나의 경상도 사투리 능력 테스트!</SubTitle>
+		<StyledImage src={dialect} alt="dialect"></StyledImage>
+
+		<Input handleChange={handleChange}></Input>
+
 		<Link to="/quiz">
-			<Button text="일론 머스크 지수 알아보기"></Button>
+			<Button text="지금바로 응시하기"></Button>
 		</Link>
 	</Container>
-);
+	)
+};
 
 export default Landing;

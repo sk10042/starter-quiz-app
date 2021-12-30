@@ -1,34 +1,48 @@
-const QUIZZES = [
+const SURVEY = [
 	{
 		id: 1,
-		question: "일론 머스크의 우주 탐사 기업 이름은?",
+		question: "나는 스타벅스를 좋아한다.",
 		answers: [
-			{ text: "스페이스 엑스", isCorrect: true },
-			{ text: "테슬라", isCorrect: false },
-			{ text: "보링 컴퍼니", isCorrect: false },
-			{ text: "솔라시티", isCorrect: false },
+			{ text: "1 - 전혀 동의하지 않는다.", agree: 1 },
+			{ text: "2", agree: 2 },
+			{ text: "3", agree: 3 },
+			{ text: "4", agree: 4 },
+			{ text: "5 - 전적으로 동의한다.", agree: 5 },
 		],
 	},
 	{
 		id: 2,
-		question: "일론 머스크의 고향은 어디일까요?",
+		question: "나는 아침마다 커피숍에 간다.",
 		answers: [
-			{ text: "미국 캘리포니아", isCorrect: false },
-			{ text: "남아프리카 공화국 프리토리아", isCorrect: true },
-			{ text: "캐나다 벤쿠버", isCorrect: false },
-			{ text: "호주 시드니", isCorrect: false },
+			{ text: "1 - 전혀 동의하지 않는다.", agree: 1 },
+			{ text: "2", agree: 2 },
+			{ text: "3", agree: 3 },
+			{ text: "4", agree: 4 },
+			{ text: "5 - 전적으로 동의한다.", agree: 5 },
 		],
 	},
 	{
 		id: 3,
-		question: "일론 머스크가 창업한 페이팔 전신 기업의 이름은?",
+		question: "나는 맥심 믹스 커피를 좋아한다.",
 		answers: [
-			{ text: "Zip2 Corporation", isCorrect: false },
-			{ text: "Alpha Exploration co.", isCorrect: false },
-			{ text: "X.com", isCorrect: true },
-			{ text: "Everything CO.", isCorrect: false },
+			{ text: "1 - 전혀 동의하지 않는다.", agree: 1 },
+			{ text: "2", agree: 2 },
+			{ text: "3", agree: 3 },
+			{ text: "4", agree: 4 },
+			{ text: "5 - 전적으로 동의한다.", agree: 5 },
+		],
+	},
+	{
+		id: 4,
+		question: "나는 겨울에도 아이스 아메리카노를 즐겨 마신다.",
+		answers: [
+			{ text: "1 - 전혀 동의하지 않는다.", agree: 1 },
+			{ text: "2", agree: 2 },
+			{ text: "3", agree: 3 },
+			{ text: "4", agree: 4 },
+			{ text: "5 - 전적으로 동의한다.", agree: 5 },
 		],
 	},
 ];
 
-export { QUIZZES };
+export { SURVEY };

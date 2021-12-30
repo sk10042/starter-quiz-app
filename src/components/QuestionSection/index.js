@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { QUIZZES } from "../../constants";
+import { SURVEY } from "../../constants";
 
 const QuestionSectionWrapper = styled.div`
 	margin-bottom: 16px;
@@ -20,9 +20,9 @@ const QuestionTitle = styled.div`
 const QuestionSection = ({ currentNo }) => (
 	<QuestionSectionWrapper>
 		<PageLabel>
-			<span>{QUIZZES[currentNo].id}</span>/{QUIZZES.length}
+			<span>{SURVEY[currentNo].id}</span>/{SURVEY.length}
 		</PageLabel>
-		<QuestionTitle>{QUIZZES[currentNo].question}</QuestionTitle>
+		<QuestionTitle>{SURVEY[currentNo].question}</QuestionTitle>
 	</QuestionSectionWrapper>
 );
 export default QuestionSection;

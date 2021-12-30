@@ -6,22 +6,24 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Quiz from "../pages/Quiz";
 import Landing from "../pages/Landing";
 import Result from "../pages/Result";
+//import Data from "../pages/Data";
 
 function App() {
 	const [score, setScore] = useState(0);
+	const [userName, setUserName] = useState('');
 
 	return (
 		<ThemeProvider theme={theme}>
 			<GlobalStyle />
 			<Router>
 				<Route path="/result">
-					<Result score={score} setScore={setScore} />
+					<Result userName={userName} score={score} setScore={setScore} />
 				</Route>
 				<Route path="/quiz">
 					<Quiz setScore={setScore} />
 				</Route>
-				<Route path="/" exact>
-					<Landing />
+				<Route path="/">
+					<Landing userName={userName} setUserName={setUserName} />
 				</Route>
 			</Router>
 		</ThemeProvider>
