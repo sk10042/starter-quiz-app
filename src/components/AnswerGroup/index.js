@@ -17,7 +17,7 @@ const AnswerGroup = ({ currentNo, handleClick }) => (
 			<Button
 				key={answer.text}
 				text={answer.text}
-				onClick={() => handleClick(answer.agree)}
+				onClick={() => handleClick(answer.agree, SURVEY[currentNo].id)}
 			></Button>
 		))}
 	</AnswerGroupWrapper>

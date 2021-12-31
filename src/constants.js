@@ -1,4 +1,4 @@
-const SURVEY = [
+let SURVEY = [
 	{
 		id: 1,
 		question: "나는 스타벅스를 좋아한다.",
@@ -9,6 +9,7 @@ const SURVEY = [
 			{ text: "4", agree: 4 },
 			{ text: "5 - 전적으로 동의한다.", agree: 5 },
 		],
+		check:0,
 	},
 	{
 		id: 2,
@@ -20,6 +21,7 @@ const SURVEY = [
 			{ text: "4", agree: 4 },
 			{ text: "5 - 전적으로 동의한다.", agree: 5 },
 		],
+		check:0,
 	},
 	{
 		id: 3,
@@ -31,6 +33,7 @@ const SURVEY = [
 			{ text: "4", agree: 4 },
 			{ text: "5 - 전적으로 동의한다.", agree: 5 },
 		],
+		check:0,
 	},
 	{
 		id: 4,
@@ -42,6 +45,7 @@ const SURVEY = [
 			{ text: "4", agree: 4 },
 			{ text: "5 - 전적으로 동의한다.", agree: 5 },
 		],
+		check:0,
 	},
 ];
 

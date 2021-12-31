@@ -22,7 +22,7 @@ function App() {
 				<Route path="/quiz">
 					<Quiz setScore={setScore} />
 				</Route>
-				<Route path="/">
+				<Route path="/" exact>
 					<Landing userName={userName} setUserName={setUserName} />
 				</Route>
 			</Router>

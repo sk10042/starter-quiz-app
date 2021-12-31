@@ -9,7 +9,13 @@ const Quiz = ({ setScore }) => {
 	const [currentNo, setCurrentNo] = useState(0);
 	let history = useHistory();
 
-	const handleClick = (agree) => {
+	const handleClick = (agree, answerId) => {
+		SURVEY.forEach(function( row ) {
+			if(row.id == answerId) {
+				row.check = agree;
+			}
+		});
+		
 		setScore((score) => score + agree);
 		// 마지막 퀴즈인지 체크하기
 		if (currentNo === SURVEY.length - 1) {

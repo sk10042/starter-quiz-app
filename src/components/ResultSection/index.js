@@ -9,8 +9,8 @@ const ResultTitle = styled.h1`
 `;
 
 const Score = styled.p`
-	font-size: 192px;
-	margin: 40px;
+	font-size: 39px;
+	margin: 10px;
 	text-align: center;
 	color: ${(props) => props.theme.primaryColor100};
 `;
@@ -18,7 +18,7 @@ const Score = styled.p`
 const ResultSection = ({ convertedScore, userName}) => (
 	<>
 		<ResultTitle>{userName}님은 커피를 이만큼 좋아합니다! (100점만점)</ResultTitle>
-		<Score>{convertedScore}</Score>
+		<Score>{convertedScore} 점</Score>
 	</>
 );
 export default ResultSection;
